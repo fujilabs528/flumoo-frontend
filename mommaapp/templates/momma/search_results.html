@@ -1,0 +1,16 @@
+{% extends "momma/base.html" %}
+{% block content %}
+
+<h1> Search Results</h1>
+
+<ul>
+
+(% for x in object_list %}
+    <li>
+        {{ x.ticker}}, {{x.names}}
+    </li>
+{%endfor%}
+
+</ul>
+
+{% endblock content %}
