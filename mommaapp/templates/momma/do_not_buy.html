@@ -5,13 +5,14 @@
 
   <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-      <h1 class="h2">Our Portfolio</h1>
+      <h1 class="h2">Do Not Buy List</h1>
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
-          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" onclick= "window.location.href='{% url 'do_not_buy_share' %}'"
+                  class="btn btn-sm btn-outline-secondary">Share</button>
           <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
         </div>
-        <button type="button" onclick= "window.location.href={% url 'home2' %}"
+        <button type="button" onclick= "window.location.href={% url 'do_not_buy2' %}"
                 class="btn btn-sm btn-outline-secondary dropdown-toggle">
           <span data-feather="calendar"></span>
           This week
@@ -19,8 +20,6 @@
       </div>
     </div>
     <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-
-
 
 <h2>Positions</h2>
 <div class="table-responsive">
@@ -37,117 +36,109 @@
 
     <tbody>
       <tr>
-        <td>FB</td>
-        <td>$265.30</td>
-        <td>11/03/2020</td>
-        <td>$305.10</td>
-        <td>Equity, Health Ratio, Ending Cash Position,
-          Operating Cash Flow, Top To Bottom Ratio</td>
-      </tr>
-      <tr>
-        <td>INTC</td>
+        <td>TDG</td>
         <td>$44.85</td>
-        <td>11/03/2020</td>
-        <td>$51.58</td>
-        <td>Equity, Operating Cash Flow</td>
+        <td>11/22/2020</td>
+        <td>$38.13</td>
+        <td>Equity </td>
       </tr>
       <tr>
-        <td>MSFT</td>
+        <td>ROK</td>
         <td>$206.43</td>
-        <td>11/03/2020</td>
-        <td>$237.40</td>
-        <td>Equity, Ending Cash Position, Operating Cash Flow</td>
+        <td>11/22/2020</td>
+        <td>$175.47</td>
+        <td>Ending Cash Position</td>
       </tr>
       <tr>
-        <td>GOOG</td>
-        <td>$1650.21</td>
-        <td>11/03/2020</td>
-        <td>$1897.74</td>
-        <td>Equity, Health Ratio, Ending Cash Position, Operating Cash Flow </td>
+        <td>ABC</td>
+        <td>$100.46</td>
+        <td>11/22/2020</td>
+        <td>$85.40</td>
+        <td> Dominance Ratio </td>
       </tr>
       <tr>
-        <td>CSCO</td>
-        <td>$36.68</td>
-        <td>11/03/2020</td>
-        <td>$42.18</td>
-        <td>Operating Cash Flow</td>
+        <td>SBUX</td>
+        <td>$97.01</td>
+        <td>11/22/2020</td>
+        <td>$82.46</td>
+        <td>Equity, Health Ratio</td>
       </tr>
       <tr>
-        <td>TXN</td>
-        <td>$147.30</td>
-        <td>11/03/2020</td>
-        <td>$169.40</td>
+        <td>SYY</td>
+        <td>$70.00</td>
+        <td>11/22/2020</td>
+        <td>$59.5</td>
+        <td>Equity</td>
+      </tr>
+      <tr>
+        <td>UNH</td>
+        <td>$334.70</td>
+        <td>11/22/2020</td>
+        <td>$284.50</td>
         <td>N/A</td>
       </tr>
       <tr>
-        <td>JNJ</td>
-        <td>$138.50</td>
-        <td>11/03/2020</td>
-        <td>$159.28</td>
-        <td>Equity, Operating Cash Flow</td>
+        <td>LYV</td>
+        <td>$66.31</td>
+        <td>11/22/2020</td>
+        <td>$56.36</td>
+        <td>Operating Cash Flow </td>
       </tr>
       <tr>
-        <td>NVDA</td>
-        <td>$520.78</td>
-        <td>11/03/2020</td>
-        <td>$598.90</td>
-        <td>Health Ratio </td>
-      </tr>
-      <tr>
-        <td>PG</td>
-        <td>$141.22</td>
-        <td>11/03/2020</td>
-        <td>$162.40</td>
+        <td>HRB</td>
+        <td>$17.93</td>
+        <td>11/22/2020</td>
+        <td>$15.24</td>
         <td>Operating Cash Flow</td>
       </tr>
       <tr>
-        <td>CME</td>
-        <td>$153.48</td>
-        <td>11/03/2020</td>
-        <td>$176.50</td>
-        <td>Dominance Ratio, Top To Bottom Ratio </td>
+        <td>SEE</td>
+        <td>$45.20</td>
+        <td>11/22/2020</td>
+        <td>$38.42</td>
+        <td>Operating Cash Flow, Health Ratio </td>
       </tr>
       <tr>
-        <td>VRTX</td>
-        <td>$211.14</td>
-        <td>11/03/2020</td>
-        <td>$242.81</td>
-        <td>Heatlh Ratio, Top To Bottom Ratio</td>
+        <td>VAR</td>
+        <td>$173.51</td>
+        <td>11/22/2020</td>
+        <td>$147.48</td>
+        <td>Ending Cash Position </td>
       </tr>
       <tr>
-        <td>ATVI</td>
-        <td>$76.26</td>
-        <td>11/03/2020</td>
-        <td>$87.70</td>
-        <td>N/A</td>
+        <td>AVY</td>
+        <td>$147.50</td>
+        <td>11/22/2020</td>
+        <td>$125.38</td>
+        <td>Equity</td>
       </tr>
       <tr>
-        <td>PSA</td>
-        <td>$235.48</td>
-        <td>11/03/2020</td>
-        <td>$270.80</td>
-        <td>Health Ratio </td>
+        <td>J</td>
+        <td>$103.80</td>
+        <td>11/22/2020</td>
+        <td>$88.23</td>
+        <td>Ending Cash Position, Operating Cash Flow</td>
       </tr>
       <tr>
-        <td>ADBE</td>
-        <td>$454.02</td>
-        <td>11/03/2020</td>
-        <td>$522.12</td>
+        <td>AIZ</td>
+        <td>$133.89</td>
+        <td>11/22/2020</td>
+        <td>$113.81</td>
         <td>Dominance Ratio</td>
       </tr>
       <tr>
-        <td>ALXN</td>
-        <td>$117.02</td>
-        <td>11/03/2020</td>
-        <td>$134.57</td>
-        <td>Dominance Ratio</td>
+        <td>DRI</td>
+        <td>$108.45</td>
+        <td>11/22/2020</td>
+        <td>$92.18</td>
+        <td>N/A </td>
       </tr>
       <tr>
-        <td>PFE</td>
-        <td>$36.19</td>
-        <td>11/03/2020</td>
-        <td>$41.62</td>
-        <td>Equity, Operating Cash Flow, Dominance Ratio</td>
+        <td>LEG</td>
+        <td>$43.46</td>
+        <td>11/22/2020</td>
+        <td>$36.94</td>
+        <td>Operating Cash Flow</td>
       </tr>
     </tbody>
   </table>
@@ -161,7 +152,7 @@
       </script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-        <script src="{% static 'mommaapp/dashboard.js' %}"></script>
+        <script src="{% static 'mommaapp/dashboard3.js' %}"></script>
       </main>
 
 

@@ -8,10 +8,16 @@
       <h1 class="h2">Our Portfolio</h1>
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
-          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" onclick= "window.location.href='{% url 'home_share' %}'"
+                  class="btn btn-sm btn-outline-secondary">Share</button>
+
+
           <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+
+
+
         </div>
-        <button type="button" onclick= "window.location.href={% url 'home2' %}"
+        <button type="button" onclick= "window.location.href='{% url 'home2' %}'"
                 class="btn btn-sm btn-outline-secondary dropdown-toggle">
           <span data-feather="calendar"></span>
           This week
@@ -155,7 +161,8 @@
     {% load static %}
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
       <script>window.jQuery ||
       document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
       </script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

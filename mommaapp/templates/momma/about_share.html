@@ -1,0 +1,101 @@
+{% extends "momma/base.html" %}
+{% block content %}
+
+
+  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">About</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group mr-2">
+          <button type="button" onclick= "window.location.href='{% url 'about' %}'"
+                  class="btn btn-sm btn-outline-secondary">Share</button>
+
+            <button type="button"
+                  class="btn btn-sm btn-outline-secondary">
+            <a href=" https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}">
+              <span data-feather="facebook"></span>
+            </a>
+          </button>
+
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            <a href=" https://www.twitter.com/home?status={{ request.build_absolute_uri }}">
+                <span data-feather="twitter"></span></a>
+
+          <button type="button"
+                  class="btn btn-sm btn-outline-secondary">
+            <a href=" https://www.linkedin.com/sharearticle?mini=true&url={{request.build_absolute_uri}}">
+                <span data-feather="linkedin"></span></a>
+
+
+          <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+      </div>
+    </div>
+      <p> The idea behind Flumoo came during a postgraduate accounting class in the spring of 2015.
+          I had been intrigued by my readings of Warren Buffett on financial analysis, securities markets,
+          and investment strategy. Naturally, as a business student, I would
+          find Buffet's views compelling. However, in discovering his approach to investing, I
+          would learn something more. His meticulous dissecting of financial statements, newspaper
+          clippings, tax documents, and other relics would serve as the foundation for which his
+          investment empire is afixed. </p>
+
+      <p> Flumoo was born during a boring night lecture. My mind was wondering. I was anxious to go
+          home. I thought it was just another class when my mind randomly latched on to something.
+          My subconcious brain had been ruminating on a cocktail of theories and curiosities, as
+          any curious mind does, particularly on the teachings I had been learning about in class,
+          those of Buffett and others. As the professor announced that the class would be
+          receiving permission to a very expensive stock-trading platform, my mind wondered how Warren Buffet
+          would use such a tool. I wondered what he might be interested in, how he might use the computer
+          to sort through the data. I wanted to know what kinds of questions he might have, questions
+          about cash flow, debt positions,
+          income statement dynamics, among others. Many years later, Flumoo seeks to realize
+          this concept and provide theoretical utilities, predictive capabilites, and
+          simulative overatures moving forward. </p>
+      <small> Jay Kelly, Creator</small>
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+<h1 class="h2">Glossary</h1>
+<div class="btn-toolbar mb-2 mb-md-0">
+</div>
+</div>
+      <h4> Top To Bottom Ratio</h4>
+      <p> After all is said and done, how much did it cost the firm to make its profit</p>
+      <h4> Organizational Lean Ratio</h4>
+      <p> How much excess is spent operating the business  </p>
+      <h4> Dominance  Ratio</h4>
+      <p> How expensive is the process of obtaining and making the firm's product or service  </p>
+                        <h4> Behind The Scenes  Ratio</h4>
+<p> How is the firm moving its non-operating cash around </p>
+       <h4> Assets</h4>
+<p> Physical Cash, Checking Account, Savings Account, Certificates of Deposit,
+    Money Market Accounts, Treasury Bills, Property/Land, Inventory, Equipment,
+    Receivables, Goodwill, IP
+</p>
+             <h4> Ending Cash Position</h4>
+<p> The amount of cash the firm has on hand, at that moment in time. This
+    cash position is a sign of financial strength and liquidity of the firm,
+    representing the ability of the firm to meet its current liabilities. Cash is
+    the most liquid type of asset and a large portion in a valuable currency such
+    as the US Dollar, Japanese Yen, or Swiss Franc will provide maximum utility in
+    the marketplace. The value of currency declines as interest rates are low because
+    access to more cash is relatively cheap. Hence, cash, the most liquid asset, is especially
+    prized during times of high interest rates.
+</p>
+
+      {% load static %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+    </script>
+      <script>window.jQuery ||
+      document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+      </script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="{% static 'mommaapp/dashboard.js' %}"></script>
+      </main>
+
+
+
+{% endblock content %}

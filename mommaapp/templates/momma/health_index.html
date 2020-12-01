@@ -7,13 +7,10 @@
       <h1 class="h2">Health Index</h1>
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
-          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" onclick= "window.location.href='{% url 'health_index_share' %}'"
+                  class="btn btn-sm btn-outline-secondary">Share</button>
           <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
         </div>
-        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-          <span data-feather="calendar"></span>
-          This week
-        </button>
       </div>
     </div>
 
@@ -25,7 +22,8 @@
               <th>Revenue</th>
               <th>Operating Cash </th>
               <th>Net Income </th>
-              <th>Operating Cash</th>
+              <th>Assets</th>
+              <th>Ending Cash Position</th>
 
             </tr>
           </thead>
@@ -34,117 +32,147 @@
             <tr>
               <td>BAC</td>
               <td>WMT</td>
-              <td>0</td>
-              <td>0</td>
-              <td>XOM</td>
+              <td>AAPL</td>
+              <td>MSFT</td>
+              <td>JPM</td>
+              <td>JPM</td>
             </tr>
             <tr>
               <td>JPM</td>
               <td>AMZN</td>
-              <td>11/03/2020</td>
-              <td>$51.58</td>
-              <td>Equity, Operating Cash Flow</td>
+              <td>BAC</td>
+              <td>GOOG</td>
+              <td>BAC</td>
+              <td>BAC</td>
             </tr>
             <tr>
               <td>T </td>
               <td>AAPL</td>
-              <td>11/03/2020</td>
-              <td>$237.40</td>
-              <td>Equity, Ending Cash Position, Operating Cash Flow</td>
+              <td>JPM</td>
+              <td>INTC</td>
+              <td>C</td>
+              <td>C</td>
             </tr>
             <tr>
               <td>GOOG</td>
               <td>CVS</td>
-              <td>11/03/2020</td>
-              <td>$1897.74</td>
-              <td>Equity, Health Ratio, Ending Cash Position, Operating Cash Flow </td>
+              <td>MSFT</td>
+              <td>FB</td>
+              <td>WFC</td>
+              <td>WFC</td>
             </tr>
             <tr>
-              <td>CSCO</td>
+              <td>XOM</td>
               <td>MCK</td>
-              <td>11/03/2020</td>
-              <td>$42.18</td>
-              <td>Operating Cash Flow</td>
+              <td>GOOG</td>
+              <td>SLB</td>
+              <td>GS</td>
+              <td>GS</td>
             </tr>
             <tr>
-              <td>TXN</td>
+              <td>C</td>
+              <td>XOM</td>
+              <td>AMZN</td>
+              <td>SLB</td>
+              <td>PRU</td>
+              <td>MS</td>
+            </tr>
+            <tr>
+              <td>WFC</td>
               <td>ABC</td>
-              <td>11/03/2020</td>
-              <td>$169.40</td>
-              <td>N/A</td>
+              <td>T</td>
+              <td>AAPL</td>
+              <td>MS</td>
+              <td>COF</td>
             </tr>
             <tr>
-              <td>JNJ</td>
+              <td>CVX</td>
+              <td>T</td>
+              <td>VZ</td>
+              <td>VZ</td>
+              <td>MET</td>
+              <td>USB</td>
+            </tr>
+            <tr>
+              <td>MSFT</td>
               <td>COST</td>
-              <td>11/03/2020</td>
-              <td>$159.28</td>
-              <td>Equity, Operating Cash Flow</td>
+              <td>INTC</td>
+              <td>WMT</td>
+              <td>T</td>
+              <td>SCHW</td>
             </tr>
             <tr>
-              <td>NVDA</td>
+              <td>FB</td>
+              <td>GOOG</td>
+              <td>FB</td>
+              <td>JNJ</td>
+              <td>AIG</td>
+              <td>AXP</td>
+            </tr>
+            <tr>
+              <td>DIS</td>
               <td>CI</td>
-              <td>11/03/2020</td>
-              <td>$598.90</td>
-              <td>Health Ratio </td>
-            </tr>
-            <tr>
-              <td>PG</td>
-              <td>$141.22</td>
-              <td>11/03/2020</td>
-              <td>$162.40</td>
-              <td>Operating Cash Flow</td>
-            </tr>
-            <tr>
-              <td>CME</td>
-              <td>$153.48</td>
-              <td>11/03/2020</td>
-              <td>$176.50</td>
-              <td>Dominance Ratio, Top To Bottom Ratio </td>
-            </tr>
-            <tr>
-              <td>VRTX</td>
-              <td>$211.14</td>
-              <td>11/03/2020</td>
-              <td>$242.81</td>
-              <td>Heatlh Ratio, Top To Bottom Ratio</td>
-            </tr>
-            <tr>
-              <td>ATVI</td>
-              <td>$76.26</td>
-              <td>11/03/2020</td>
-              <td>$87.70</td>
-              <td>N/A</td>
-            </tr>
-            <tr>
-              <td>PSA</td>
-              <td>$235.48</td>
-              <td>11/03/2020</td>
-              <td>$270.80</td>
-              <td>Health Ratio </td>
-            </tr>
-            <tr>
-              <td>ADBE</td>
-              <td>$454.02</td>
-              <td>11/03/2020</td>
-              <td>$522.12</td>
-              <td>Dominance Ratio</td>
-            </tr>
-            <tr>
-              <td>ALXN</td>
-              <td>$117.02</td>
-              <td>11/03/2020</td>
-              <td>$134.57</td>
-              <td>Dominance Ratio</td>
-            </tr>
-            <tr>
+              <td>WMT</td>
               <td>PFE</td>
-              <td>$36.19</td>
-              <td>11/03/2020</td>
-              <td>$41.62</td>
-              <td>Equity, Operating Cash Flow, Dominance Ratio</td>
+              <td>UAA</td>
+              <td>TFC</td>
+            </tr>
+            <tr>
+              <td>AAPL</td>
+              <td>CAH</td>
+              <td>WFC</td>
+              <td>PG</td>
+              <td>USB</td>
+              <td>AMZN</td>
+            </tr>
+            <tr>
+              <td>GS</td>
+              <td>CI</td>
+              <td>CMCSA</td>
+              <td>T</td>
+              <td>TFC</td>
+              <td>GM</td>
+            </tr>
+            <tr>
+              <td>CMCSA</td>
+              <td>MSFT</td>
+              <td>PRU</td>
+              <td>HD</td>
+              <td>PNC</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td>MS</td>
+              <td>WBA</td>
+              <td>XOM</td>
+              <td>CMCSA</td>
+              <td>COF</td>
+              <td>ORCL</td>
+            </tr>
+            <tr>
+              <td>WMT</td>
+              <td>F</td>
+              <td>JNJ</td>
+              <td>CSCO</td>
+              <td>BK</td>
+              <td>MET</td>
             </tr>
           </tbody>
         </table>
       </div>
+
+
+    {% load static %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+    </script>
+      <script>window.jQuery ||
+      document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+      </script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="{% static 'mommaapp/dashboard.js' %}"></script>
+      </main>
 
 {% endblock content %}

@@ -7,18 +7,33 @@
       <h1 class="h2">About</h1>
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
-          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" onclick= "window.location.href='{% url 'about_share' %}'"
+                  class="btn btn-sm btn-outline-secondary">Share</button>
+
           <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
         </div>
-        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-          <span data-feather="calendar"></span>
-          This week
-        </button>
       </div>
     </div>
-      <p> The idea behind flumoo came during a postgraduate accounting class in the spring of 2015. I had been studying financial analysis, securities markets, and investment strategy, and was intrigued by my readings of Warren Buffet. Naturally, as a business student, I would find Buffet compelling. In discovering his approach to investing, I learned of his method, the meticulous dissections of thousand of financial statements and reports. Documents like the 10K, balance sheet, newspaper clippings, and tax documents ultimately served as the launching point for investments valued in the millions.
+      <p> The idea behind Flumoo came during a postgraduate accounting class in the spring of 2015.
+          I had been intrigued by my readings of Warren Buffett on financial analysis, securities markets,
+          and investment strategy. Naturally, as a business student, I would
+          find Buffet's views compelling. However, in discovering his approach to investing, I
+          would learn something more. His meticulous dissecting of financial statements, newspaper
+          clippings, tax documents, and other relics would serve as the foundation for which his
+          investment empire is afixed. </p>
 
-flumoo was born one day while my mind was wondering in class. my brain has been slowly ruminating on this concept for the previous couple of months and my natural creativity would frequently spark up various revelations every so often. one day, my mind landed on the question of how to download all of the financial data Warren Buffet would be interested in and use the computer to sort through the data to answer the questions I would have, questions about cash flow, debt situations, income statement attributes, among others.  </p>
+      <p> Flumoo was born during a boring night lecture. My mind was wondering. I was anxious to go
+          home. I thought it was just another class when my mind randomly latched on to something.
+          My subconcious brain had been ruminating on a cocktail of theories and curiosities, as
+          any curious mind does, particularly on the teachings I had been learning about in class,
+          those of Buffett and others. As the professor announced that the class would be
+          receiving permission to a very expensive stock-trading platform, my mind wondered how Warren Buffet
+          would use such a tool. I wondered what he might be interested in, how he might use the computer
+          to sort through the data. I wanted to know what kinds of questions he might have, questions
+          about cash flow, debt positions,
+          income statement dynamics, among others. Many years later, Flumoo seeks to realize
+          this concept and provide theoretical utilities, predictive capabilites, and
+          simulative overatures moving forward. </p>
       <small> Jay Kelly, Creator</small>
 
 
@@ -37,7 +52,7 @@ flumoo was born one day while my mind was wondering in class. my brain has been 
 <p> How is the firm moving its non-operating cash around </p>
        <h4> Assets</h4>
 <p> Physical Cash, Checking Account, Savings Account, Certificates of Deposit,
-    Money Market Accounts, Treasury bills. Property/Land, Inventory, Equipment,
+    Money Market Accounts, Treasury Bills, Property/Land, Inventory, Equipment,
     Receivables, Goodwill, IP
 </p>
              <h4> Ending Cash Position</h4>
@@ -50,6 +65,19 @@ flumoo was born one day while my mind was wondering in class. my brain has been 
     access to more cash is relatively cheap. Hence, cash, the most liquid asset, is especially
     prized during times of high interest rates.
 </p>
+
+      {% load static %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+    </script>
+      <script>window.jQuery ||
+      document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+      </script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="{% static 'mommaapp/dashboard.js' %}"></script>
+      </main>
 
 
 

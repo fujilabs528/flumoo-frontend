@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "mommaapp.apps.mommaappConfig",
+    "blog.apps.BlogConfig",
     "users.apps.UsersConfig",
     "crispy_forms",
     'django.contrib.admin',
@@ -80,13 +81,8 @@ WSGI_APPLICATION = 'momma.wsgi.application'
 #superuser - user all (username, email, password)
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "sp500xxx",
-        "USER": "postgres",
-        "PASSWORD":"password",
-        "HOST": "localhost",
-        "PORT":"",
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
